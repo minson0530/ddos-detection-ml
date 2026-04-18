@@ -10,7 +10,7 @@ Cloud environments often struggle with Economic Denial of Service (EDoS) attacks
 
 Traditional DDoS mitigation tools frequently overlook these low-rate attacks because they blend into normal traffic. Establishing a robust detection layer is a fundamental requirement for secure cloud management. By securing the environment first, we enable near-optimal resource allocation strategies that ensure system capacity serves legitimate users rather than malicious actors.
 
-## Research Visuals
+## Research Poster
 <p align="center">
   <img src="Research_Poster%20Prism.webp" alt="Research Poster" width="800">
 </p>
