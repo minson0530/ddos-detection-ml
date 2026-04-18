@@ -9,7 +9,7 @@ This proposal, developed at the **University of Toronto (Computer Science Depart
 * **Simulation Tools:** HTTPFlooder and LoadRunner for generating malicious and benign traffic.
 * **Evaluation Dataset:** CIC-IDS2018 for testing generalization across diverse attack scenarios.
 
-## 🖼️ Research Visuals
+## 🖼️ Research Posters
 <p align="center">
   <img src="Research_Poster%20Prism.webp" alt="Research Poster" width="800">
 </p>
