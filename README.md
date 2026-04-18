@@ -34,7 +34,7 @@ The proposed framework utilizes an iterative machine learning pipeline to refine
 ---
 
 ### Team & Mentorship
-* **Research Team**: Olivier Denis, Hyde Yoo, **Son Min**, Lotus Kong
+* **Research Team**: Olivier Denis, Hyde Yoo, **Min Son**, Lotus Kong
 * **Mentor**: **Michalis Bachras**, 4th year Ph.D. Candidate, University of Toronto
 * **Program**: Conducted as part of the **PRISM** program at the University of Toronto.
 
