@@ -10,7 +10,9 @@ This proposal, developed at the **University of Toronto (Computer Science Depart
 * **Evaluation Dataset:** CIC-IDS2018 for testing generalization across diverse attack scenarios.
 
 ## 🖼️ Research Visuals
-![Research Poster](Research_Poster%20Prism.jpg)
+<p align="center">
+  <img src="Research_Poster%20Prism.webp" alt="Research Poster" width="800">
+</p>
 
 ## 🔬 Proposed Methodology
 The proposal introduces an **iterative machine learning pipeline** designed to classify requests and refine detection accuracy over time:
