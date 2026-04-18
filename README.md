@@ -1,7 +1,7 @@
 # Research Proposal: Signature-Based Detection of Subtle DDoS Attacks
 
 ## 📝 Project Overview
-This proposal, developed at the **University of Toronto (Computer Science Department)**, outlines a framework to protect cloud environments from **Economic Denial of Service (EDoS)** and subtle **DDoS** attacks. These threats are particularly critical because they mimic legitimate traffic to exploit auto-scaling models, resulting in unrecoverable financial losses for cloud users.
+This proposal, developed at the **University of Toronto (Computer Science Department)**, outlines a framework to protect cloud environments from **Economic Denial of Service (EDoS)** and subtle **DDoS** attacks. These threats are particularly critical because they mimic legitimate traffic to exploit auto-scaling models, resulting in unrecoverable financial losses for cloud users. Effective detection of subtle attacks serves as a prerequisite for secure cloud management, enabling more efficient resource allocation strategies.
 
 ## 🛠️ Proposed Technical Stack
 * **Languages & Libraries:** Python, Scikit-learn (Random Forest).
@@ -24,7 +24,7 @@ The proposal introduces an **iterative machine learning pipeline** designed to c
 ---
 *Developed for the **PRISM** (Preparation for Research through Immersion, Skills, and Mentorship) program.*
 
-**Research Team:** Olivier Denis, Hyde Yoo, **Son Min**, Lotus Kong  
+**Research Team:** Olivier Denis, Hyde Yoo, **Min Son**, Lotus Kong  
 **Mentor:** Michalis Bachras
 
 
