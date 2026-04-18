@@ -1,35 +1,30 @@
-# Signature-Based Detection of Subtle DDoS Attacks on Cloud
+# Research Proposal: Signature-Based Detection of Subtle DDoS Attacks
 
-## 🚀 Project Overview
-[cite_start]This research focuses on enhancing cloud security by detecting subtle **Economic Denial of Service (EDoS)** and **DDoS** attacks[cite: 5]. [cite_start]By utilizing an iterative machine learning approach, the framework refines its detection capabilities through the analysis of both request-level signatures and virtual machine (VM) telemetry[cite: 36, 45].
+## 📝 Project Overview
+This proposal, developed at the **University of Toronto (Computer Science Department)**, outlines a framework to protect cloud environments from **Economic Denial of Service (EDoS)** and subtle **DDoS** attacks. These threats are particularly critical because they mimic legitimate traffic to exploit auto-scaling models, resulting in unrecoverable financial losses for cloud users.
 
-* [cite_start]**Research Question**: How can iterative supervised machine learning improve the generalization of detection for subtle cloud-based attacks like EDoS? [cite: 5, 7]
-* [cite_start]**Motivation**: EDoS attacks mimic legitimate users to exploit auto-scaling models, causing irreversible financial damage to cloud consumers[cite: 12, 31, 34].
-* **Institution**: University of Toronto, Computer Science Department.
-* [cite_start]**Team**: Olivier Denis, Hyde Yoo, **Son Min**, and Lotus Kong[cite: 2].
+## 🛠️ Proposed Technical Stack
+* **Languages & Libraries:** Python, Scikit-learn (Random Forest).
+* **Infrastructure:** KVM-based Virtual Machines hosting web servers and databases.
+* **Simulation Tools:** HTTPFlooder and LoadRunner for generating malicious and benign traffic.
+* **Evaluation Dataset:** CIC-IDS2018 for testing generalization across diverse attack scenarios.
 
-## 🛠 Technical Methodology
-The project employs a multi-stage pipeline to classify traffic and refine model accuracy:
+## 🔬 Proposed Methodology
+The proposal introduces an **iterative machine learning pipeline** designed to classify requests and refine detection accuracy over time:
 
-1.  [cite_start]**Data Generation**: Benign and malicious traffic are simulated using **HTTPFlooder** and **LoadRunner** within a **KVM-based** virtual environment[cite: 46, 47, 73].
-2.  [cite_start]**Feature Extraction**: The system extracts a diverse set of features[cite: 76, 78]:
-    * [cite_start]**Network-Level**: TCP/UDP transfer sizes and IP packet sizes[cite: 79].
-    * [cite_start]**System-Level**: CPU usage and memory requests from the VM[cite: 79].
-    * [cite_start]**Application-Level**: Web server time and request types[cite: 79].
-3.  **Iterative Model Refinement**: 
-    * [cite_start]An initial **Random Forest** model (built with `scikit-learn`) classifies requests[cite: 78, 81].
-    * [cite_start]**Feature Importance** is analyzed and passed to a secondary AI model[cite: 82].
-    * [cite_start]The secondary model tunes the features and weights for the next iteration to optimize performance[cite: 83].
+* **Multi-Layered Feature Analysis:** The model is designed to analyze features across the Network (TCP/UDP size), System (CPU/Memory usage), and Application (Web request time) layers.
+* **Iterative Model Refinement:** An initial Random Forest model classifies activity and identifies **Feature Importance**. These insights are then fed into a secondary AI model to tune the primary model's weights and features for the next iteration.
+* **Signature-Based Classification:** Instead of standard IP filtering, the proposal focuses on turning traffic packets into unique signatures to improve the detection rate of anomalous behavior.
 
-## 📊 Key Results & Evaluation
-* [cite_start]**Performance Metrics**: The model is evaluated based on **Precision**, **Recall**, and **F1-score**[cite: 88].
-* [cite_start]**Benchmarking**: The proposed model is compared against baseline methods, including rate-limiting and standard signature-based traffic classification[cite: 91].
-* [cite_start]**Generalization**: Testing on the **CIC-IDS2018 dataset** ensures the model remains effective against novel attack signatures beyond the initial training set[cite: 95].
+## 📈 Expected Contributions
+* **Improved Generalization:** The iterative approach aims to enhance the system's ability to detect novel and unseen attack signatures.
+* **Proactive Defense:** By integrating request-level and resource-usage features, the model intends to outperform baseline reactive rate-limiting methods.
+* **Broad Impact:** The framework is designed to extend beyond EDoS to broader cloud threats such as DeNy and Control-Plane DoS attacks.
 
-## 📖 Related Works
-* [cite_start]**Abbasi et al.**: Suggested EDoS detection using virtual machine context[cite: 64, 97].
-* [cite_start]**Dimolianis et al.**: Proposed signature analysis for traffic legitimacy[cite: 60, 106].
-* [cite_start]**Baig et al.**: Implemented reactive rate-limiting based on past user activity[cite: 49, 101].
+---
+*Developed for the **PRISM** (Preparation for Research through Immersion, Skills, and Mentorship) program.*
 
-## 🎓 Acknowledgements
-This research was conducted as part of the **PRISM** (Preparation for Research through Immersion, Skills, and Mentorship) program at the **University of Toronto**.
+**Research Team:** Olivier Denis, Hyde Yoo, **Son Min**, Lotus Kong  
+**Mentor:** Michalis Bachras
+
+
