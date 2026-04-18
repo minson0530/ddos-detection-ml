@@ -9,6 +9,9 @@ This proposal, developed at the **University of Toronto (Computer Science Depart
 * **Simulation Tools:** HTTPFlooder and LoadRunner for generating malicious and benign traffic.
 * **Evaluation Dataset:** CIC-IDS2018 for testing generalization across diverse attack scenarios.
 
+## 🖼️ Research Visuals
+![Research Poster](Research_Poster%20Prism.jpg)
+
 ## 🔬 Proposed Methodology
 The proposal introduces an **iterative machine learning pipeline** designed to classify requests and refine detection accuracy over time:
 
